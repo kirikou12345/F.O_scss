@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import 'couleur';
+ @import 'taille';
+
+h2{
+    color:$couleur1;
+}
+
+h3{
+    color:$couleur2;
+}
+
+p{
+    color:$couleur3;
+}
+
+button{
+    color:$couleur1;
+}
+
+.actus{
+    background: $couleur_fond1;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
