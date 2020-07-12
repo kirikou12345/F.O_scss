@@ -7,25 +7,61 @@
  @import 'taille';
 
 h2{
-    color:$couleur1;
+    color: $couleur1;
 }
 
 h3{
-    color:$couleur2;
+    color: $couleur2;
 }
 
 p{
-    color:$couleur3;
+    color: $couleur3;
 }
 
 button{
-    color:$couleur1;
+    color: $couleur1;
 }
 
 .actus{
-    background: $couleur_fond1;
-    width: 1000px;
+    
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
+    h2{
+        border:solid $couleur1 2px;
+    }
+    .actu{
+        background:$couleur_fond2;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        margin: 10px 0;
+        button{
+            display: inline-block;
+            margin: 0 auto;
+        }
+        &:before {
+            content: "AVANT";
+        }
+        &::after{
+            content: "APRES";
+        }
+        @media screen and (min-width: width 768px){
+            background: red;
+        }
+    }
+
+    @media screen and (min-width: width 768px){
+        width: 700px;
+    }
+    
+    @media screen and (min-width: width 1200px){
+        width: 1000px;
+    }
+
 }
+
+
+
+
